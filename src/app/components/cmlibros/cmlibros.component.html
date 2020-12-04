@@ -1,0 +1,57 @@
+<form autocomplete="off" (ngSubmit)="modificarlib()" #forma="ngForm">
+
+    <p>
+    <div>
+        <input class="form-control" type="text" placeholder="Titulo del Libro" id=" validationServer01"
+            [(ngModel)]="libro.titulo" name="titulo" #nombre="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            El nombre es necesario.
+
+        </div>
+    </div>
+
+    <p>
+
+    <div>
+        <input class="form-control" type="text" placeholder="Autor" id=" validationServer02" name="autor"
+            [(ngModel)]="libro.autor" #password="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            El Autor es necesario.
+
+        </div>
+    </div>
+
+    <p>
+
+    <div>
+        <input class="form-control" type="text" placeholder="Editorial" id=" validationServer03" name="editorial"
+            [(ngModel)]="libro.editorial" #email="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            La editorial es necesaria.
+
+        </div>
+    </div>
+
+    <div>
+        <label>Disponible</label>
+        <input type="checkbox" placeholder="" id=" validationServer03" name="estatus" [(ngModel)]="libro.disponible"
+            #email="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            El email es necesario.
+
+        </div>
+    </div>
+    <p>
+
+    <p>
+        <button class="btn btn-success o" type="submit">Actualizar libro</button>
+
+</form>

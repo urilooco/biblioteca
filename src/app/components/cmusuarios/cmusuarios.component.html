@@ -1,0 +1,46 @@
+<form autocomplete="off" (ngSubmit)="modificaruser()" #forma="ngForm">
+
+    <p>
+    <div>
+        <input class="form-control" type="text" placeholder="Nombre" id=" validationServer01" [(ngModel)]="usu.nombre"
+            name="nombre" #nombre="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            El nombre es necesario.
+
+        </div>
+    </div>
+
+    <p>
+
+    <div>
+        <input class="form-control" type="text" placeholder="Contraseña" id=" validationServer02" name="Contraseña"
+            [(ngModel)]="usu.password" #password="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            El Autor es necesario.
+
+        </div>
+    </div>
+
+    <p>
+
+    <div>
+        <input class="form-control" type="text" placeholder="Email" id=" validationServer03" name="email"
+            [(ngModel)]="usu.email" #email="ngModel" required>
+
+        <div class="invalid-feedback">
+
+            La editorial es necesaria.
+
+        </div>
+    </div>
+
+    <p>
+
+    <p>
+        <button class="btn btn-success o" type="submit">Actualizar usuario</button>
+
+</form>
